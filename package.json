@@ -1,0 +1,27 @@
+{
+  "name": "codeceptjs-tests",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "ts-node support/utils/gen-types.ts",
+    "test": "npm run build && codeceptjs run --steps",
+    "lint": "eslint .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@codeceptjs/configure": "^1.0.1",
+    "@codeceptjs/examples": "^1.2.4",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "codeceptjs": "^3.4.1",
+    "envalid": "^8.0.0",
+    "eslint": "^8.57.0",
+    "factory.ts": "^1.4.1",
+    "husky": "^9.0.11",
+    "playwright": "^1.42.1",
+    "typescript": "^5.4.3",
+    "typescript-eslint": "^7.5.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^8.57.0"
+  }
+}
